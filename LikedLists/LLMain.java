@@ -6,7 +6,7 @@ public class LLMain {
 	public static void main(String[] args) {
 		
 		LinkedList nums =new LinkedList();
-		nums.addFirst(5);
+		
 		nums.addLast(10);
 		nums.addLast(20);
 		nums.addLast(30);
@@ -18,6 +18,12 @@ public class LLMain {
 //		var arrays=nums.toArray();
 		System.out.println(Arrays.toString(arrays));
 		
+		
+		
+		nums.reverse();
+		int[] array=nums.toArray();
+		
+		System.out.println(Arrays.toString(array));
 		
 		System.out.println("Success");
 		

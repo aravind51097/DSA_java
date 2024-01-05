@@ -132,6 +132,22 @@ public class LinkedList {
 
 		return size;
 	}
+	public void reverse() {
+		
+		Node current =last;
+		Node first=current;
+		
+		
+		while(previousNode(current)!=null) {
+			
+			current=previousNode(current);
+			last=current;
+			System.out.println(last.value);
+			
+		}
+		
+		
+	}
 	
 	
 	

@@ -11,7 +11,7 @@ public class Array {
 	}
 
 	public void insert(int item) {
-		// we need to grow the arr if arr if full
+		// we need to grow the array if array if full
 		if (count == arr.length) {
 			int[] newArr = new int[count * 2];
 

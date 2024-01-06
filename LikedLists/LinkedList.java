@@ -71,7 +71,7 @@ public class LinkedList {
 		 * Since we have implemented InexOf we can use that method
 		 * 
 		 */
-
+		//returning false if idexOfitem not found
 		return indexOf(item) != -1;
 
 	}
@@ -142,7 +142,7 @@ public class LinkedList {
 			
 			current=previousNode(current);
 			last=current;
-			System.out.println(last.value);
+			
 			
 		}
 		

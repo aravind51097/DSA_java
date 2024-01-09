@@ -1,10 +1,11 @@
 package Arrays;
 
 
+
 public class SayHello {
 	public static void main(String[] args) {
 		
-	
+		
 		Array nums=new Array(2);
 		nums.insert(10);
 		nums.insert(20);

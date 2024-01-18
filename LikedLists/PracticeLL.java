@@ -3,23 +3,25 @@ package LikedLists;
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 
+import Arrays.Array;
+
 public class PracticeLL {
 
 	Node first;
 	Node last;
 	int size;
 
+	// creating class Node for linked list
 	class Node {
 
+		// next node referent type Node
 		Node next;
+		// Value of the current node
 		int value;
 
+		// Initializing node with value
 		Node(int value) {
 			this.value = value;
-
-		}
-
-		Node() {
 
 		}
 
@@ -32,7 +34,9 @@ public class PracticeLL {
 			first = last = node;
 		}
 
+		// next node of last is current node we pass[node]
 		last.next = node;
+		// changing the current to last node as
 		last = node;
 		size++;
 
@@ -129,15 +133,20 @@ public class PracticeLL {
 	}
 
 	public Node previousNode(Node node) {
-
+		
+		//giving first node which is the starting point
 		var current = first;
+		//loop runs till current node reaches last node 
 		while (current != null) {
+			//if the given node is equals to the next node of current then returning current node as previous
 			if (current.next == node) {
 				return current;
 			}
+			//pointing current node to next node 
 			current = current.next;
 		}
-
+		
+		//if no nodes then returning false v
 		return null;
 	}
 
